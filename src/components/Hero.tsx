@@ -10,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary pt-20">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -57,13 +57,11 @@ const Hero = () => {
 
           {/* Right image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white p-8">
-              <img 
-                src={heroImage} 
-                alt="Maquininhas de pagamento V1 Pag" 
-                className="w-full h-auto object-contain"
-              />
-            </div>
+            <img 
+              src={heroImage} 
+              alt="Maquininhas de pagamento V1 Pag" 
+              className="w-full h-auto object-contain drop-shadow-2xl"
+            />
           </div>
         </div>
       </div>
