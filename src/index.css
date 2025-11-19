@@ -21,7 +21,7 @@ All colors MUST be HSL.
     --primary: 29 100% 50%; /* Vibrant Orange #FF7A00 */
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 210 100% 12%; /* Deep Blue #001F3F */
+    --secondary: 220 65% 18%; /* Deep Blue #101e4d */
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 96%;
@@ -64,7 +64,7 @@ All colors MUST be HSL.
     --primary: 29 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 100% 15%;
+    --secondary: 220 65% 18%;
     --secondary-foreground: 0 0% 100%;
 
     --muted: 0 0% 15%;
