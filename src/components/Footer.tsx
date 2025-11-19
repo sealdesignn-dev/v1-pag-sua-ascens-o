@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -9,9 +10,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold">
-              <span className="text-primary">V1</span> Pag
-            </h3>
+            <img src={logo} alt="V1 Pag Logo" className="h-12 w-auto" />
             <p className="text-background/70">
               Você em 1º lugar! Soluções de pagamento para seu negócio crescer.
             </p>
@@ -86,9 +85,12 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="pt-8 border-t border-background/20 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-background/70 text-sm">
-            © {currentYear} V1 Pag. Todos os direitos reservados.
-          </p>
+          <div className="flex items-center gap-3">
+            <img src={logo} alt="V1 Pag Logo" className="h-8 w-auto" />
+            <p className="text-background/70 text-sm">
+              © {currentYear} Todos os direitos reservados.
+            </p>
+          </div>
 
           {/* Social Media */}
           <div className="flex gap-4">

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-payment.jpg";
+import heroImage from "@/assets/hero-machines.png";
+import logo from "@/assets/logo.png";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -9,7 +10,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-background via-muted/20 to-background">
+    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -21,15 +22,16 @@ const Hero = () => {
           {/* Left content */}
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-                <span className="text-foreground">V1 Pag</span>
-                <br />
+              <div className="flex justify-center lg:justify-start mb-6">
+                <img src={logo} alt="V1 Pag Logo" className="h-20 md:h-24 lg:h-28 w-auto" />
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="text-primary">Você em 1º lugar!</span>
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
+              <p className="text-xl md:text-2xl text-secondary-foreground/80 max-w-2xl mx-auto lg:mx-0">
                 Pagamento fácil para clientes.
                 <br />
-                <span className="text-foreground font-semibold">Rentabilidade real para franqueados.</span>
+                <span className="text-secondary-foreground font-semibold">Rentabilidade real para franqueados.</span>
               </p>
             </div>
 
@@ -57,13 +59,12 @@ const Hero = () => {
 
           {/* Right image */}
           <div className="relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-white p-8">
               <img 
                 src={heroImage} 
-                alt="Profissional com maquininha de pagamento V1 Pag" 
-                className="w-full h-auto object-cover"
+                alt="Maquininhas de pagamento V1 Pag" 
+                className="w-full h-auto object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-foreground/10 to-transparent" />
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CreditCard, Zap, TrendingUp, BarChart3, Headphones } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const benefits = [
   {
@@ -32,7 +33,7 @@ const benefits = [
 
 const ClientsSection = () => {
   const handleContact = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Quero ser cliente V1 Pag', '_blank');
+    window.open('https://wa.me/5511999999999?text=Olá! Quero ser cliente', '_blank');
   };
 
   return (
@@ -66,9 +67,9 @@ const ClientsSection = () => {
             variant="hero" 
             size="xl"
             onClick={handleContact}
-            className="group"
+            className="group flex items-center gap-2"
           >
-            Quero minha V1 Pag
+            Quero minha <img src={logo} alt="V1 Pag" className="h-6 inline-block" />
           </Button>
         </div>
       </div>

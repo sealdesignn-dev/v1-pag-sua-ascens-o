@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, HeadphonesIcon, TrendingUp, Users } from "lucide-react";
 import terminalImage from "@/assets/terminal-closeup.jpg";
+import logo from "@/assets/logo.png";
 
 const benefits = [
   {
@@ -33,8 +34,8 @@ const About = () => {
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-                Por que escolher a <span className="text-primary">V1 Pag</span>?
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground flex items-center gap-4 flex-wrap">
+                Por que escolher a <img src={logo} alt="V1 Pag" className="h-12 inline-block" />?
               </h2>
             </div>
 
