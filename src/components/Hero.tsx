@@ -25,13 +25,11 @@ const Hero = () => {
               <div className="flex justify-center lg:justify-start mb-6">
                 <img src={logo} alt="V1 Pag Logo" className="h-20 md:h-24 lg:h-28 w-auto" />
               </div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-                <span className="text-primary">Você em 1º lugar!</span>
+              <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
+                <span className="text-primary">A maquininha perfeita para lucrar mais.</span>
               </h1>
-              <p className="text-xl md:text-2xl text-secondary-foreground/80 max-w-2xl mx-auto lg:mx-0">
-                Pagamento fácil para clientes.
-                <br />
-                <span className="text-secondary-foreground font-semibold">Rentabilidade real para franqueados.</span>
+              <p className="text-lg md:text-xl text-secondary-foreground/70 max-w-2xl mx-auto lg:mx-0">
+                Diga adeus a Bitributação.
               </p>
             </div>
 
@@ -39,19 +37,19 @@ const Hero = () => {
               <Button 
                 variant="hero" 
                 size="xl"
-                onClick={() => scrollToSection("clientes")}
+                onClick={() => window.open('https://wa.link/m60tf5', '_blank')}
                 className="group"
               >
-                Quero ser cliente
+                Conversar com Gestor
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button 
                 variant="outline-light" 
                 size="xl"
-                onClick={() => scrollToSection("franqueados")}
+                onClick={() => window.open('https://v1pag.com.br', '_blank')}
                 className="group"
               >
-                Quero ser franqueado
+                Acessar área
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
