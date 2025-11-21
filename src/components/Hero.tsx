@@ -58,7 +58,7 @@ const Hero = () => {
             <img 
               src={heroImage} 
               alt="Maquininhas de pagamento V1 Pag" 
-              className="w-3/4 h-auto object-contain drop-shadow-2xl"
+              className="w-3/4 h-auto object-contain drop-shadow-2xl animate-fade-in animate-float hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
