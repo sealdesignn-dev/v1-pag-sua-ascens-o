@@ -54,11 +54,11 @@ const Hero = () => {
           </div>
 
           {/* Right image */}
-          <div className="relative">
+          <div className="relative flex justify-center">
             <img 
               src={heroImage} 
               alt="Maquininhas de pagamento V1 Pag" 
-              className="w-full h-auto object-contain drop-shadow-2xl"
+              className="w-3/4 h-auto object-contain drop-shadow-2xl"
             />
           </div>
         </div>
