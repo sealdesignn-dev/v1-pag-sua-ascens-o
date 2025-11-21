@@ -46,7 +46,7 @@ const Hero = () => {
               <Button 
                 variant="outline-light" 
                 size="xl"
-                onClick={() => window.open('https://v1pag.com.br', '_blank')}
+                onClick={() => window.open('http://v1pag.stafebank.com.br', '_blank')}
                 className="group"
               >
                 Acessar área
