@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-machines.png";
-import logo from "@/assets/logo.png";
-
 const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -23,7 +21,7 @@ const Hero = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <div className="flex justify-center lg:justify-start mb-6">
-                <img src={logo} alt="V1 Pag Logo" className="h-20 md:h-24 lg:h-28 w-auto" />
+                <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary">V1 PAG</h2>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-primary">A maquininha perfeita para lucrar mais.</span>
