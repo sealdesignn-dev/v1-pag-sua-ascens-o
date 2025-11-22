@@ -37,26 +37,26 @@ const ClientsSection = () => {
   };
 
   return (
-    <section id="clientes" className="py-24 bg-background">
+    <section id="clientes" className="py-24 bg-[hsl(220,65%,18%)]">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            A maquininha que <span className="text-primary">impulsiona</span> o seu negócio
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            A <strong>maquininha</strong> que <strong>impulsiona</strong> o seu negócio
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 max-w-2xl mx-auto">
             Tudo que você precisa para aceitar pagamentos e crescer com segurança
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {benefits.map((benefit, index) => (
-            <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group border-2 hover:border-primary/20">
+            <Card key={index} className="p-8 bg-[hsl(29,100%,50%)] hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group border-2 border-[hsl(29,100%,50%)] hover:border-[hsl(29,100%,55%)]">
               <div className="space-y-4">
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                  <benefit.icon className="w-7 h-7 text-primary" />
+                <div className="w-14 h-14 bg-[hsl(220,65%,18%)]/20 rounded-xl flex items-center justify-center group-hover:bg-[hsl(220,65%,18%)]/30 transition-colors">
+                  <benefit.icon className="w-7 h-7 text-[hsl(220,65%,18%)]" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground">{benefit.title}</h3>
-                <p className="text-muted-foreground">{benefit.description}</p>
+                <h3 className="text-xl font-bold text-[hsl(220,65%,18%)]">{benefit.title}</h3>
+                <p className="text-[hsl(220,65%,18%)]/80">{benefit.description}</p>
               </div>
             </Card>
           ))}

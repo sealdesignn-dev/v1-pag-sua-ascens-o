@@ -24,7 +24,7 @@ const Hero = () => {
                 <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary">V1 PAG</h2>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
-                <span className="text-primary">A maquininha perfeita para lucrar mais.</span>
+                <span className="text-primary">A <strong className="text-white">maquininha</strong> perfeita <strong className="text-white">para lucrar mais.</strong></span>
               </h1>
               <p className="text-lg md:text-xl text-secondary-foreground/70 max-w-2xl mx-auto lg:mx-0">
                 Diga adeus a Bitributação.
@@ -58,7 +58,7 @@ const Hero = () => {
             <img 
               src={heroImage} 
               alt="Maquininhas de pagamento V1 Pag" 
-              className="w-3/4 h-auto object-contain drop-shadow-2xl animate-fade-in animate-float hover:scale-105 transition-transform duration-300"
+              className="w-3/4 h-auto object-contain drop-shadow-2xl animate-fade-in hover:scale-105 transition-transform duration-300"
             />
           </div>
         </div>
