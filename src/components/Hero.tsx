@@ -4,11 +4,11 @@ import heroImage from "@/assets/hero-machines.png";
 const Hero = () => {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary">
+  return <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-secondary">
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-24 -right-24 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -32,21 +32,11 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                variant="hero" 
-                size="xl"
-                onClick={() => window.open('https://wa.link/m60tf5', '_blank')}
-                className="group"
-              >
+              <Button variant="hero" size="xl" onClick={() => window.open('https://wa.link/m60tf5', '_blank')} className="group">
                 Conversar com Gestor
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button 
-                variant="outline-light" 
-                size="xl"
-                onClick={() => window.open('http://v1pag.stafebank.com.br', '_blank')}
-                className="group"
-              >
+              <Button variant="outline-light" size="xl" onClick={() => window.open('http://v1pag.stafebank.com.br', '_blank')} className="group">
                 Acessar área do cliente
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -55,16 +45,10 @@ const Hero = () => {
 
           {/* Right image */}
           <div className="relative flex justify-center">
-            <img 
-              src={heroImage} 
-              alt="Maquininhas de pagamento V1 Pag" 
-              className="w-3/4 h-auto object-contain drop-shadow-2xl animate-fade-in hover:scale-105 transition-transform duration-300"
-            />
+            <img src={heroImage} alt="Maquininhas de pagamento V1 Pag" className="w-3/4 h-auto object-contain drop-shadow-2xl animate-fade-in hover:scale-150 transition-transform duration-300" />
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
