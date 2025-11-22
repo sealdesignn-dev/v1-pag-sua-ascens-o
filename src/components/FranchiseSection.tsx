@@ -2,7 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, GraduationCap, TrendingUp, Briefcase } from "lucide-react";
 import franchiseeImage from "@/assets/franchisee-success.jpg";
-import logo from "@/assets/logo.png";
 
 const highlights = [
   {
@@ -53,7 +52,7 @@ const FranchiseSection = () => {
           <div className="space-y-8 order-1 lg:order-2">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold flex items-center gap-3 flex-wrap">
-                Seja franqueado <img src={logo} alt="V1 Pag" className="h-12 inline-block" /> e transforme sua renda
+                Seja franqueado <strong>V1 PAG</strong> e transforme sua renda
               </h2>
               <p className="text-xl text-secondary-foreground/80">
                 Uma oportunidade real de construir um negócio lucrativo e escalável

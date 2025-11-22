@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CreditCard, Zap, TrendingUp, BarChart3, Headphones } from "lucide-react";
-import logo from "@/assets/logo.png";
 
 const benefits = [
   {
@@ -67,9 +66,9 @@ const ClientsSection = () => {
             variant="hero" 
             size="xl"
             onClick={handleContact}
-            className="group flex items-center gap-2"
+            className="group"
           >
-            Quero minha <img src={logo} alt="V1 Pag" className="h-6 inline-block" />
+            Quero minha V1 PAG
           </Button>
         </div>
       </div>
