@@ -26,20 +26,20 @@ const benefits = [
 
 const About = () => {
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-24 bg-[hsl(29,100%,50%)]">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground flex items-center gap-4 flex-wrap">
-                Por que escolher a <span className="text-primary">V1 PAG</span>?
+              <h2 className="text-4xl md:text-5xl font-bold text-[hsl(220,65%,18%)] flex items-center gap-4 flex-wrap">
+                Por que escolher a <strong>V1 PAG</strong>?
               </h2>
             </div>
 
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="p-5 bg-[hsl(220,70%,45%)] border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:translate-x-2">
+                <Card key={index} className="p-5 bg-[hsl(220,70%,45%)] border-l-4 border-l-[hsl(220,65%,18%)] hover:shadow-lg transition-all duration-300 hover:translate-x-2">
                   <div className="flex items-center gap-4">
                     <div className="p-2 bg-white/20 rounded-lg">
                       <benefit.icon className="w-6 h-6 text-white" />

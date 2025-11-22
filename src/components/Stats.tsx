@@ -26,13 +26,13 @@ const stats = [
 
 const Stats = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-24 bg-[hsl(220,65%,18%)]">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground">
-            Números que <span className="text-primary">comprovam</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Números que <strong>comprovam</strong>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-xl text-white/80 max-w-2xl mx-auto">
             A confiança de milhares em números
           </p>
         </div>
