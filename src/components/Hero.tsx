@@ -21,7 +21,7 @@ const Hero = () => {
           <div className="space-y-8 text-center lg:text-left">
             <div className="space-y-4">
               <div className="flex justify-center lg:justify-start mb-6">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-primary">V1 PAG</h2>
+                <h2 className="text-5xl md:text-6xl lg:text-7xl text-primary font-extrabold">V1 PAG</h2>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight">
                 <span className="text-primary">A <strong className="text-white">maquininha</strong> perfeita <strong className="text-white">para lucrar mais.</strong></span>
