@@ -62,13 +62,13 @@ const FranchiseSection = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {highlights.map((highlight, index) => (
-                <Card key={index} className="p-6 bg-background/10 border-background/20 hover:bg-background/20 transition-all duration-300">
+                <Card key={index} className="p-6 bg-[hsl(29,100%,50%)] border-[hsl(29,100%,50%)] hover:bg-[hsl(29,100%,55%)] transition-all duration-300">
                   <div className="space-y-3">
-                    <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                      <highlight.icon className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 bg-[hsl(220,65%,18%)]/20 rounded-lg flex items-center justify-center">
+                      <highlight.icon className="w-6 h-6 text-[hsl(220,65%,18%)]" />
                     </div>
-                    <h3 className="text-lg font-bold">{highlight.title}</h3>
-                    <p className="text-sm text-secondary-foreground/70">{highlight.description}</p>
+                    <h3 className="text-lg font-bold text-[hsl(220,65%,18%)]">{highlight.title}</h3>
+                    <p className="text-sm text-[hsl(220,65%,18%)]/80">{highlight.description}</p>
                   </div>
                 </Card>
               ))}

@@ -39,12 +39,12 @@ const About = () => {
 
             <div className="space-y-4">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="p-5 border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:translate-x-2">
+                <Card key={index} className="p-5 bg-[hsl(220,70%,45%)] border-l-4 border-l-primary hover:shadow-lg transition-all duration-300 hover:translate-x-2">
                   <div className="flex items-center gap-4">
-                    <div className="p-2 bg-primary/10 rounded-lg">
-                      <benefit.icon className="w-6 h-6 text-primary" />
+                    <div className="p-2 bg-white/20 rounded-lg">
+                      <benefit.icon className="w-6 h-6 text-white" />
                     </div>
-                    <p className="text-lg font-medium text-foreground">{benefit.text}</p>
+                    <p className="text-lg font-medium text-white">{benefit.text}</p>
                   </div>
                 </Card>
               ))}

@@ -39,14 +39,14 @@ const Stats = () => {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <Card key={index} className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 hover:border-primary/20">
+            <Card key={index} className="p-8 text-center bg-[hsl(29,100%,50%)] hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-2 border-[hsl(29,100%,50%)] hover:border-[hsl(29,100%,55%)]">
               <div className="space-y-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto">
-                  <stat.icon className="w-8 h-8 text-primary" />
+                <div className="w-16 h-16 bg-[hsl(220,65%,18%)]/20 rounded-full flex items-center justify-center mx-auto">
+                  <stat.icon className="w-8 h-8 text-[hsl(220,65%,18%)]" />
                 </div>
                 <div>
-                  <p className="text-4xl font-bold text-foreground mb-2">{stat.value}</p>
-                  <p className="text-muted-foreground">{stat.label}</p>
+                  <p className="text-4xl font-bold text-[hsl(220,65%,18%)] mb-2">{stat.value}</p>
+                  <p className="text-[hsl(220,65%,18%)]/80">{stat.label}</p>
                 </div>
               </div>
             </Card>
