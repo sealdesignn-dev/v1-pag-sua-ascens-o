@@ -47,7 +47,7 @@ const Hero = () => {
                 onClick={() => window.open('http://v1pag.stafebank.com.br', '_blank')}
                 className="group"
               >
-                Acessar área
+                Acessar área do cliente
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
             </div>
