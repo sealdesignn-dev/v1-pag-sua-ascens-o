@@ -43,21 +43,21 @@ const HowItWorks = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <Card key={index} className="p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative group">
+            <Card key={index} className="p-8 text-center bg-[hsl(220,70%,45%)] hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative group">
               <div className="space-y-4">
                 <div className="relative">
-                  <div className="text-7xl font-bold text-primary/10 absolute -top-8 left-1/2 -translate-x-1/2">
+                  <div className="text-7xl font-bold text-white/10 absolute -top-8 left-1/2 -translate-x-1/2">
                     {step.number}
                   </div>
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:bg-primary/20 transition-colors">
-                    <step.icon className="w-8 h-8 text-primary" />
+                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto relative z-10 group-hover:bg-white/30 transition-colors">
+                    <step.icon className="w-8 h-8 text-white" />
                   </div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground pt-4">{step.title}</h3>
-                <p className="text-muted-foreground">{step.description}</p>
+                <h3 className="text-xl font-bold text-white pt-4">{step.title}</h3>
+                <p className="text-white/80">{step.description}</p>
               </div>
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/20" />
+                <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-white/20" />
               )}
             </Card>
           ))}

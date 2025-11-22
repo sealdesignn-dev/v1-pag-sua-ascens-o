@@ -37,19 +37,19 @@ const Testimonials = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="p-8 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card">
+            <Card key={index} className="p-8 bg-[hsl(220,70%,45%)] hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="space-y-4">
                 <div className="flex gap-1">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-lg text-foreground leading-relaxed">
+                <p className="text-lg text-white leading-relaxed">
                   "{testimonial.content}"
                 </p>
-                <div className="pt-4 border-t border-border">
-                  <p className="font-bold text-foreground">{testimonial.name}</p>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                <div className="pt-4 border-t border-white/20">
+                  <p className="font-bold text-white">{testimonial.name}</p>
+                  <p className="text-sm text-white/70">{testimonial.role}</p>
                 </div>
               </div>
             </Card>

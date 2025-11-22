@@ -23,6 +23,12 @@ All colors MUST be HSL.
     
     --secondary: 220 65% 18%; /* Deep Blue #101e4d */
     --secondary-foreground: 0 0% 100%;
+    
+    /* Custom color variants */
+    --blue-card: 220 70% 45%; /* Blue for cards */
+    --blue-card-foreground: 0 0% 100%;
+    --orange-card: 29 100% 50%; /* Orange for cards */
+    --orange-card-foreground: 220 65% 18%; /* Deep blue text */
 
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
