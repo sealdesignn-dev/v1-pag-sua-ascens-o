@@ -25,8 +25,7 @@ const About = () => {
           <div className="space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold text-[hsl(220,65%,18%)]">
-                Por que escolher a          
-V1 PAG? <strong>V1 PAG?</strong>
+                Por que escolher      <strong>V1 PAG?</strong>
               </h2>
             </div>
 
