@@ -6,7 +6,7 @@ const benefits = [{
   text: "Taxas competitivas e transparentes"
 }, {
   icon: Clock,
-  text: "Aprovação rápida"
+  text: "Economia de 5% a 10% por transação!"
 }, {
   icon: HeadphonesIcon,
   text: "Suporte humanizado 24h"
