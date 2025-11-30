@@ -36,7 +36,7 @@ V1 PAG? <strong>V1 PAG?</strong>
                     <div className="p-2 bg-white/20 rounded-lg">
                       <benefit.icon className="w-6 h-6 text-white" />
                     </div>
-                    <p className="text-lg font-medium text-white">{benefit.text}</p>
+                    <p className="text-lg text-white font-normal">{benefit.text}</p>
                   </div>
                 </Card>)}
             </div>
