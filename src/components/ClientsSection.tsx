@@ -15,8 +15,8 @@ const benefits = [
   },
   {
     icon: TrendingUp,
-    title: "Recebimento instantâneo",
-    description: "Seu dinheiro na hora que precisa"
+    title: "Recebimento D+1",
+    description: "Dinheiro seguro com D+1"
   },
   {
     icon: BarChart3,

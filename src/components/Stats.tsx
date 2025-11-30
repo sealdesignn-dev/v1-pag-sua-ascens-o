@@ -4,13 +4,13 @@ import { Users, Award, ThumbsUp, Clock } from "lucide-react";
 const stats = [
   {
     icon: Users,
-    value: "10.000+",
-    label: "Clientes ativos"
+    value: "+200",
+    label: "Parceiros ativos"
   },
   {
     icon: Award,
-    value: "300+",
-    label: "Franqueados"
+    value: "Franqueados",
+    label: "qualificados"
   },
   {
     icon: ThumbsUp,
