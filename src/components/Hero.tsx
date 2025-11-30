@@ -36,6 +36,10 @@ const Hero = () => {
                 Conversar com Gestor
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
               </Button>
+              <Button variant="hero" size="xl" onClick={() => scrollToSection('franqueados')} className="group">
+                Seja um franqueado
+                <ArrowRight className="group-hover:translate-x-1 transition-transform" />
+              </Button>
               <Button variant="outline-light" size="xl" onClick={() => window.open('http://v1pag.stafebank.com.br', '_blank')} className="group">
                 Acessar área do cliente
                 <ArrowRight className="group-hover:translate-x-1 transition-transform" />
