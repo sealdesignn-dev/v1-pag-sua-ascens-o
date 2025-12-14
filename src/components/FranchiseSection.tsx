@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { DollarSign, GraduationCap, TrendingUp, Briefcase } from "lucide-react";
-import franchiseeImage from "@/assets/franchisee-success.jpg";
+import { useNavigate } from "react-router-dom";
 const highlights = [{
   icon: DollarSign,
   title: "Lucro recorrente",
@@ -20,9 +20,7 @@ const highlights = [{
   description: "Modelo de negócio testado e aprovado"
 }];
 const FranchiseSection = () => {
-  const handleContact = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Quero ser franqueado', '_blank');
-  };
+  const navigate = useNavigate();
   return <section id="franqueados" className="py-24 bg-secondary text-secondary-foreground">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -58,8 +56,8 @@ const FranchiseSection = () => {
                 </Card>)}
             </div>
 
-            <Button variant="hero" size="xl" onClick={handleContact} className="w-full sm:w-auto">
-              Quero ser franqueado
+            <Button variant="hero" size="xl" onClick={() => navigate("/franquia")} className="w-full sm:w-auto">
+              Saiba as vantagens
             </Button>
           </div>
         </div>
