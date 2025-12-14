@@ -69,7 +69,7 @@ const Franquia = () => {
 
     const message = `Olá! Quero ser franqueado V1 PAG.%0A%0A*Nome:* ${encodeURIComponent(formData.nome)}%0A*Email:* ${encodeURIComponent(formData.email)}%0A*Telefone:* ${encodeURIComponent(formData.telefone)}%0A*Cidade de interesse:* ${encodeURIComponent(formData.cidade)}`;
     
-    window.open(`https://wa.me/31?text=${message}`, '_blank');
+    window.open(`https://wa.me/5531999196066?text=${message}`, '_blank');
     
     toast({
       title: "Sucesso!",

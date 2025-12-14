@@ -3,7 +3,7 @@ import { MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const handleWhatsApp = () => {
-    window.open('https://wa.me/5511999999999?text=Olá! Gostaria de falar com um especialista V1 Pag', '_blank');
+    window.open('https://wa.me/5531999196066?text=Olá! Gostaria de falar com um especialista V1 Pag', '_blank');
   };
 
   return (
