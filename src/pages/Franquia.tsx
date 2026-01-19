@@ -3,9 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
-import { ArrowLeft, CheckCircle, DollarSign, TrendingUp, Users, Shield, Clock, Award } from "lucide-react";
+import { ArrowLeft, CheckCircle, DollarSign, TrendingUp, Users, Shield, Clock, Award, Calculator } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { useToast } from "@/hooks/use-toast";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const advantages = [
   {
@@ -40,6 +47,34 @@ const advantages = [
   }
 ];
 
+const valores = [
+  100000,
+  300000,
+  500000,
+  750000,
+  1000000,
+  1500000,
+  2000000,
+  3000000,
+  4000000,
+  5000000,
+  6000000,
+  7000000,
+  8000000,
+  9000000,
+  10000000,
+];
+
+const porcentagens = [0.50, 0.62, 0.73, 0.87, 1.02];
+
+const formatCurrency = (value: number) => {
+  return value.toLocaleString("pt-BR", {
+    style: "currency",
+    currency: "BRL",
+    minimumFractionDigits: 2,
+  });
+};
+
 const Franquia = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
@@ -49,6 +84,19 @@ const Franquia = () => {
     telefone: "",
     cidade: ""
   });
+  const [selectedValor, setSelectedValor] = useState<string>("");
+  const [selectedPorcentagem, setSelectedPorcentagem] = useState<string>("");
+
+  const calcularResultado = () => {
+    if (selectedValor && selectedPorcentagem) {
+      const valor = parseFloat(selectedValor);
+      const porcentagem = parseFloat(selectedPorcentagem);
+      return (valor * porcentagem) / 100;
+    }
+    return null;
+  };
+
+  const resultado = calcularResultado();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -102,6 +150,94 @@ const Franquia = () => {
           <p className="text-xl text-secondary-foreground/70 max-w-2xl mx-auto">
             Transforme sua vida financeira com um negócio lucrativo e escalável
           </p>
+        </div>
+      </section>
+
+      {/* Calculator Section - Em Destaque */}
+      <section className="py-16 bg-primary/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full mb-4">
+                <Calculator className="w-8 h-8 text-primary-foreground" />
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                Simule seus Ganhos
+              </h2>
+              <p className="text-muted-foreground text-lg">
+                Escolha o volume de transações e a taxa para calcular seu potencial de ganho
+              </p>
+            </div>
+
+            <Card className="p-8 bg-card border-2 border-primary shadow-2xl">
+              <div className="grid md:grid-cols-3 gap-6">
+                {/* Coluna 1 - Valor */}
+                <div className="space-y-3">
+                  <Label className="text-lg font-semibold text-card-foreground">
+                    Volume de Transações
+                  </Label>
+                  <Select onValueChange={setSelectedValor} value={selectedValor}>
+                    <SelectTrigger className="w-full h-14 text-lg bg-background border-border">
+                      <SelectValue placeholder="Selecione o valor" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border">
+                      {valores.map((valor) => (
+                        <SelectItem key={valor} value={valor.toString()} className="text-lg">
+                          {formatCurrency(valor)}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {/* Coluna 2 - Porcentagem */}
+                <div className="space-y-3">
+                  <Label className="text-lg font-semibold text-card-foreground">
+                    Taxa (%)
+                  </Label>
+                  <Select onValueChange={setSelectedPorcentagem} value={selectedPorcentagem}>
+                    <SelectTrigger className="w-full h-14 text-lg bg-background border-border">
+                      <SelectValue placeholder="Selecione a taxa" />
+                    </SelectTrigger>
+                    <SelectContent className="bg-background border-border">
+                      {porcentagens.map((porc) => (
+                        <SelectItem key={porc} value={porc.toString()} className="text-lg">
+                          {porc.toFixed(2).replace(".", ",")}%
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </div>
+
+                {/* Coluna 3 - Resultado */}
+                <div className="space-y-3">
+                  <Label className="text-lg font-semibold text-card-foreground">
+                    Seu Ganho Potencial
+                  </Label>
+                  <div className="h-14 flex items-center justify-center bg-primary/20 rounded-md border-2 border-primary">
+                    {resultado !== null ? (
+                      <span className="text-2xl font-bold text-primary">
+                        {formatCurrency(resultado)}
+                      </span>
+                    ) : (
+                      <span className="text-muted-foreground">
+                        Selecione valor e taxa
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </div>
+
+              {resultado !== null && (
+                <div className="mt-8 p-4 bg-primary/10 rounded-lg text-center">
+                  <p className="text-foreground">
+                    Com um volume de <strong>{formatCurrency(parseFloat(selectedValor))}</strong> e taxa de <strong>{parseFloat(selectedPorcentagem).toFixed(2).replace(".", ",")}%</strong>, 
+                    seu ganho potencial é de <strong className="text-primary text-xl">{formatCurrency(resultado)}</strong> por mês!
+                  </p>
+                </div>
+              )}
+            </Card>
+          </div>
         </div>
       </section>
 
