@@ -16,7 +16,7 @@ const Hero = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-8 pb-12 relative z-10 flex-1 flex flex-col">
         {/* Logo Grande em Destaque */}
-        <div className="flex justify-center mb-8">
+        <div className="flex justify-center mb-2">
           <img 
             src={logoV1Pag} 
             alt="V1 PAG - Você em 1º Lugar" 
