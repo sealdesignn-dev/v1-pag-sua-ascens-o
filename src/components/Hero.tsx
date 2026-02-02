@@ -16,11 +16,11 @@ const Hero = () => {
       {/* Main Content */}
       <div className="container mx-auto px-4 pt-8 pb-12 relative z-10 flex-1 flex flex-col">
         {/* Logo Grande em Destaque */}
-        <div className="flex justify-center mb-8 animate-fade-in">
+        <div className="flex justify-center mb-8">
           <img 
             src={logoV1Pag} 
             alt="V1 PAG - Você em 1º Lugar" 
-            className="h-60 md:h-80 lg:h-[28rem] w-auto drop-shadow-2xl" 
+            className="h-[30rem] md:h-[40rem] lg:h-[56rem] w-auto drop-shadow-2xl animate-[fade-in_1s_ease-out,scale-in_0.8s_ease-out] hover:scale-105 transition-transform duration-500" 
           />
         </div>
 
