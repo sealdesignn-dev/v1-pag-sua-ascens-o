@@ -20,7 +20,7 @@ const Hero = () => {
           <img 
             src={logoV1Pag} 
             alt="V1 PAG - Você em 1º Lugar" 
-            className="h-40 md:h-56 lg:h-72 w-auto drop-shadow-2xl" 
+            className="h-60 md:h-80 lg:h-[28rem] w-auto drop-shadow-2xl" 
           />
         </div>
 
