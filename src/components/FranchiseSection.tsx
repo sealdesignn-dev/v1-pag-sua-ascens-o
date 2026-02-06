@@ -56,7 +56,7 @@ const FranchiseSection = () => {
                 </Card>)}
             </div>
 
-            <Button variant="hero" size="xl" onClick={() => navigate("/franquia")} className="w-full sm:w-auto">
+            <Button variant="hero" size="xl" onClick={() => { navigate("/franquia"); window.scrollTo(0, 0); }} className="w-full sm:w-auto">
               Saiba as vantagens
             </Button>
           </div>
