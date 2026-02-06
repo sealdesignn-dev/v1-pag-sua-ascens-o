@@ -1,9 +1,18 @@
+import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, MessageCircle } from "lucide-react";
 import heroImage from "@/assets/hero-machines.png";
 import logoV1Pag from "@/assets/logomarca-v1-pag.png";
 
 const Hero = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      contentRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-gradient-to-br from-secondary via-secondary to-[hsl(220,65%,12%)]">
       {/* Decorative elements */}
@@ -25,7 +34,7 @@ const Hero = () => {
         </div>
 
         {/* Grid Principal */}
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center flex-1 max-w-7xl mx-auto w-full">
+        <div ref={contentRef} className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center flex-1 max-w-7xl mx-auto w-full">
           {/* Imagem das Maquininhas - Esquerda */}
           <div className="relative flex justify-center order-2 lg:order-1 animate-fade-in">
             <div className="relative">
