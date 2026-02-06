@@ -45,7 +45,7 @@ const Hero = () => {
               <Button 
                 variant="hero" 
                 size="xl" 
-                onClick={() => window.open('https://wa.me/5531999196066?text=Olá! Quero saber sobre Split de Pagamento', '_blank')} 
+                onClick={() => window.open('https://wa.me/31999024372', '_blank')} 
                 className="group w-full text-lg md:text-xl py-6"
               >
                 Quero Split de Pagamento
@@ -61,7 +61,7 @@ const Hero = () => {
               <Button 
                 variant="hero" 
                 size="xl" 
-                onClick={() => window.open('https://wa.me/5531999196066?text=Olá! Quero saber sobre as taxas', '_blank')} 
+                onClick={() => window.open('https://wa.me/31999024372', '_blank')} 
                 className="group w-full text-lg md:text-xl py-6"
               >
                 Quero Taxas Mais Baratas
@@ -77,7 +77,7 @@ const Hero = () => {
               <Button 
                 variant="hero" 
                 size="xl" 
-                onClick={() => window.open('https://wa.link/m60tf5', '_blank')} 
+                onClick={() => window.open('https://wa.me/31999024372', '_blank')} 
                 className="group w-full text-lg md:text-xl py-6"
               >
                 <MessageCircle className="mr-2" />

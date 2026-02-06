@@ -1,6 +1,8 @@
 import { Card } from "@/components/ui/card";
 import { CheckCircle2, Clock, HeadphonesIcon, TrendingUp, Users } from "lucide-react";
 import terminalImage from "@/assets/terminal-closeup.jpg";
+import logoV1Pag from "@/assets/logomarca-v1-pag.png";
+
 const benefits = [{
   icon: TrendingUp,
   text: "Taxas competitivas e transparentes"
@@ -17,6 +19,7 @@ const benefits = [{
   icon: Users,
   text: "Modelo de franquia lucrativo"
 }];
+
 const About = () => {
   return <section className="py-24 bg-[hsl(29,100%,50%)]">
       <div className="container mx-auto px-4">
@@ -24,8 +27,8 @@ const About = () => {
           {/* Left content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h2 className="text-4xl md:text-5xl font-bold text-[hsl(220,65%,18%)]">
-                Por que escolher      <strong>V1 PAG?</strong>
+              <h2 className="text-4xl md:text-5xl font-bold text-[hsl(220,65%,18%)] flex items-center flex-wrap gap-2">
+                Por que escolher <img src={logoV1Pag} alt="V1 PAG" className="inline-block h-[1em] w-auto" />?
               </h2>
             </div>
 
