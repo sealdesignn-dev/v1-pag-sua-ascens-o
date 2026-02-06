@@ -32,7 +32,7 @@ const benefits = [
 
 const ClientsSection = () => {
   const handleContact = () => {
-    window.open('https://wa.me/5531999196066?text=Olá! Quero ser cliente', '_blank');
+    window.open('https://wa.me/31999024372', '_blank');
   };
 
   return (
